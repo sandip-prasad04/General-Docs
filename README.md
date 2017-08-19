@@ -1,2 +1,2 @@
 # General-Docs
-installation related docks
+installation related docs
