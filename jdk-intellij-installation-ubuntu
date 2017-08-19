@@ -3,3 +3,11 @@
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
+
+
+### configuring GitHub
+
+sudo apt-get install git
+
+git config --global user.name "sandip-prasad04"
+git config --global user.email "sandip.prasad04@gmail.com"
