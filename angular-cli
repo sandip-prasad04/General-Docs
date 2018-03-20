@@ -1,1 +1,10 @@
+Requirement :::
 
+
+
+ng new AngularCurd --skip-tests true             // create  a new angular project and skip test files
+code .                                          // to open project in visual studio
+npm install bootstrap@3 --save                  // install bootstrap
+sudo dpkg -i [your installer.deb]              // used to install visual studio
+
+ng serve -o                                   // build and launch application in default browser
