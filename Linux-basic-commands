@@ -1,0 +1,34 @@
+LS Command
+-----------------------------
+list files and directory :   ls
+list hidden file:            ls -a
+list detail:                 ls -l  or ls -ltr
+list on directory            ls -d */    eg.  ls -d */ Documents
+
+sort by size:                ls -S
+list detail and sort
+by size :                    ls -lS      eg.   ls -lS Documents
+
+list detail only directory and sort by size
+
+ls -ldS */  eg.   ls -ldS */ Documents
+
+
+list details only and sort by date latest first           
+
+ls -lr      eg.   sandeep@sandy:~/Documents/MyBooks$ ls -lr
+                  total 12
+                 -rw-rw-r-- 1 sandeep sandeep 113 Jun 21 23:41 list3.txt
+                 -rw-rw-r-- 1 sandeep sandeep  57 Jun 21 23:38 list2.txt
+                 -rw-rw-r-- 1 sandeep sandeep  40 Jun 21 23:29 list1.txt
+                 
+                 
+                 
+CAT Command
+--------------------------------------
+
+ 
+
+
+
+
