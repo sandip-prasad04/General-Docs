@@ -36,9 +36,149 @@ eg.   sandeep@sandy:~/Documents/MyBooks$ ls -lr
                  
                  
 CAT Command
---------------------------------------
+-------------------------------------
+cat [option] [file1] [file2]...
+
+
+##echo file
+cat list1.txt
+
+eg.
+sandeep@sandy:~/Documents/MyBooks$ cat list1.txt 
+list 1 line1
+list 1 line2
+
+list 1 line3
+
+
+## combine result of more then one file
+cat list1.txt list2.txt
+
+eg.
+sandeep@sandy:~/Documents/MyBooks$ cat list1.txt list2.txt 
+list 1 line1
+list 1 line2
+
+list 1 line3
+list 2 line1
+
+list 2 line2
+list 2 line3 
+
+
+## copy result of one file to other
+cat list1.txt > list3.txt
+
+eg.
+sandeep@sandy:~/Documents/MyBooks$ cat list1.txt > list3.txt 
+sandeep@sandy:~/Documents/MyBooks$ cat list3.txt 
+list 1 line1
+list 1 line2
+
+list 1 line3
+
+
+## append result of one file to others
+cat list2.txt >> list3.txt
+eg.
+sandeep@sandy:~/Documents/MyBooks$ cat list1.txt > list3.txt 
+sandeep@sandy:~/Documents/MyBooks$ cat list3.txt 
+list 1 line1
+list 1 line2
+
+list 1 line3
+sandeep@sandy:~/Documents/MyBooks$ cat list2.txt >> list3.txt 
+sandeep@sandy:~/Documents/MyBooks$ cat list3.txt 
+list 1 line1
+list 1 line2
+
+list 1 line3
+list 2 line1
+
+list 2 line2
+list 2 line3
+
+
+## echo file with line number
+cat -b list1.txt
+eg.
+sandeep@sandy:~/Documents/MyBooks$ cat -b list1.txt 
+     1	list 1 line1
+     2	list 1 line2
+
+     3	list 1 line3
+
+
+## echo file with line number including blankline
+cat -n list1.txt
+
+eg.
+sandeep@sandy:~/Documents/MyBooks$ cat -n list1.txt 
+     1	list 1 line1
+     2	list 1 line2
+     3	
+     4	list 1 line3
+     
+     
+## remove many blank line to one line
+cat -s list1.txt
+
+eg.
+sandeep@sandy:~/Documents/MyBooks$ cat list1.txt 
+list 1 line1
+list 1 line2
+
+
+list 1 line3
+
+
+
+list 1 line4
+
+
+
+
+list 1 line5
+
+
+
+sandeep@sandy:~/Documents/MyBooks$ cat -s list1.txt 
+list 1 line1
+list 1 line2
+
+list 1 line3
+
+list 1 line4
+
+list 1 line5
+
+
+
+
+## show end of line (replace by $)
+cat -E list2.txt
+
+eg.
+sandeep@sandy:~/Documents/MyBooks$ cat -E list2.txt
+list 2 line1$
+list 2 line2$
+$
+$
+$
+list 2 line3 $
+list 2 line4 $
 
  
+
+## show line number and end of file (you can combine option)
+cat -nE list1.txt   or  cat -bE list1.txt   or cat -nsE list1.txt
+
+eg.
+sandeep@sandy:~/Documents/MyBooks$ cat -nE list1.txt 
+     1	list 1 line1$
+     2	list 1 line2$
+     3	$
+     4	list 1 line3$
 
 
 
